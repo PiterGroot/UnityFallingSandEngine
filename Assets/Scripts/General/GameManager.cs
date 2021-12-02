@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
     private void Update() {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
-        killBorder = (Camera.main.orthographicSize + Camera.main.transform.position.y) - 100;
-        killBorderUp = (Camera.main.orthographicSize + Camera.main.transform.position.y);
+        killBorder = (80 + Camera.main.transform.position.y) - 150;
+        killBorderUp = (80 + Camera.main.transform.position.y);
         if(Input.GetKeyDown(KeyCode.Tab)){
             SceneManager.LoadScene("Simulation");
         }

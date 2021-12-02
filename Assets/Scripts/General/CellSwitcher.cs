@@ -6,8 +6,8 @@ using UnityEngine.Tilemaps;
 public class CellSwitcher : MonoBehaviour
 {
     private GameManager gameManager;
-    [SerializeField]public Tile CurrentTile, SecundaryTile;
-    [SerializeField]public GameObject CurrentCellPrefab, SecundaryCellPrefab;
+    [HideInInspector]public Tile CurrentTile, SecundaryTile;
+    [HideInInspector]public GameObject CurrentCellPrefab, SecundaryCellPrefab;
     [SerializeField]private Tile[] Tiles;
     [SerializeField]private GameObject[] CellPrefabs;
     private void Awake() {

@@ -27,6 +27,7 @@ public class WaterCell : MonoBehaviour
     //update order: down --> down-left --> down-right --> left --> right
     public void UpdateTile(){
         if(!isDead){
+            Vector3Int xyPosUp = Tilemap.WorldToCell(new Vector3(transform.position.x, transform.position.y +1, 0));
             Vector3Int xyPosDown = Tilemap.WorldToCell(new Vector3(transform.position.x, transform.position.y -1, 0));
             Vector3Int xyPosDownLeft = Tilemap.WorldToCell(new Vector3(transform.position.x - 1, transform.position.y -1, 0));
             Vector3Int xyPosDownRight = Tilemap.WorldToCell(new Vector3(transform.position.x + 1, transform.position.y -1, 0));

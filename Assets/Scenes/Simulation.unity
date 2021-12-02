@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420036}
   - component: {fileID: 519420033}
   - component: {fileID: 519420035}
   - component: {fileID: 519420034}
@@ -343,6 +344,24 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &519420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885a2e65a8c4a8740be8079338933dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanScroll: 1
+  InvertedControls: 0
+  MaxCamSize: 70
+  MinCamSize: 30
+  StartCamSize: 50
+  ScrollSpeed: 3
 --- !u!1 &1925747541
 GameObject:
   m_ObjectHideFlags: 0
