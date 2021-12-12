@@ -60,4 +60,50 @@ public class CellSwitcher : MonoBehaviour
             gameManager.brushSize = gameManager.startBrushSize + 1;
         }
     }
+
+    public void SetElement(int elementType){
+        switch(elementType){
+            case 1:
+                CurrentTile = Tiles[0];
+                CurrentCellPrefab = CellPrefabs[0];
+                gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+                gameManager.brushSize = gameManager.startBrushSize;
+            break;
+            case 2:
+                CurrentTile = Tiles[1];
+                CurrentCellPrefab = CellPrefabs[1];
+                gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+                gameManager.brushSize = gameManager.startBrushSize;
+            break;
+            case 3:
+                CurrentTile = Tiles[3];
+                CurrentCellPrefab = CellPrefabs[3];
+                gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+                gameManager.brushSize = gameManager.startBrushSize;
+            break;
+            case 4:
+                CurrentTile = Tiles[4];
+                CurrentCellPrefab = CellPrefabs[4];
+                gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+            break;
+            case 5:
+                CurrentTile = Tiles[5];
+                CurrentCellPrefab = CellPrefabs[5];
+                gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+                gameManager.brushSize = gameManager.startBrushSize + 1;
+            break;
+            case 6:
+                CurrentTile = Tiles[6];
+                CurrentCellPrefab = CellPrefabs[6];
+                gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+                gameManager.brushSize = gameManager.startBrushSize + 1;
+            break;
+             case 7:
+                CurrentTile = Tiles[2];
+                CurrentCellPrefab = CellPrefabs[2];
+                gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+                gameManager.brushSize = gameManager.startBrushSize;
+            break;
+        }
+    }
 }

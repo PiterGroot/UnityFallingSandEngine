@@ -88,4 +88,12 @@ public class GassCell : MonoBehaviour
             }
         }
     }
+    private void OnMouseOver() {
+        if(Input.GetKey(KeyCode.Mouse1)){
+             gameManager.SimulatedCells--;
+             Vector3Int cellPosition = Tilemap.LocalToCell(transform.position);
+            Tilemap.SetTile(cellPosition, null);
+            Destroy(gameObject);
+        }
+    }
 }

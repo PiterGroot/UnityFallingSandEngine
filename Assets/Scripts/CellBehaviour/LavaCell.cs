@@ -37,6 +37,7 @@ public class LavaCell : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, transform.position.y -1,0);
                 if(transform.position.y < gameManager.killBorder){
                     Tilemap.SetTile(xyPosDown, null);
+                    gameManager.SimulatedCells--;
                     Destroy(gameObject);
                 }
             }
@@ -73,6 +74,14 @@ public class LavaCell : MonoBehaviour
                 //isDead = true;
                 return;
             }
+        }
+    }
+    private void OnMouseOver() {
+        if(Input.GetKey(KeyCode.Mouse1)){
+             gameManager.SimulatedCells--;
+             Vector3Int cellPosition = Tilemap.LocalToCell(transform.position);
+            Tilemap.SetTile(cellPosition, null);
+            Destroy(gameObject);
         }
     }
 }

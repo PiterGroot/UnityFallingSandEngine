@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4042723888431193159}
   - component: {fileID: 4042723888431193158}
   - component: {fileID: 4042723888431193157}
+  - component: {fileID: -9074228107425482383}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -131,3 +132,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad4fe94edbf7346ab3a2390fb19516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &-9074228107425482383
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4042723888431193179}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0

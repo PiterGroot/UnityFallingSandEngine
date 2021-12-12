@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class DebugMenu : MonoBehaviour
 {
+    [SerializeField]private Font debugFont;
     private Camera cam;
     private bool DebugMenuState = false;
     public static float fps;
     private GUIStyle Shadow = new GUIStyle();
     private GUIStyle FPSText = new GUIStyle();
+    private GameManager gameManager;
 
     private void Awake() {
+        gameManager = FindObjectOfType<GameManager>();
         cam = Camera.main;
+        //FPSText.font = debugFont;
+        //Shadow.font = debugFont;
         if(PlayerPrefs.GetInt("DebugMenu") == 0){
             //menu is off 
             FPSText.normal.textColor = new Color(0, 0 , 0 , 0);
@@ -55,6 +60,10 @@ public class DebugMenu : MonoBehaviour
         GUI.Label(new Rect(25, 20, 100, 100), "FPS: " + ((int)fps).ToString(), Shadow);
         GUI.Label(new Rect(25, 47, 100, 100), $"XYZ: {cam.transform.position}", FPSText);
         GUI.Label(new Rect(25, 45, 100, 100), $"XYZ: {cam.transform.position}", Shadow);
+        GUI.Label(new Rect(25, 72, 100, 100), $"± simulated entities: {gameManager.SimulatedCells.ToString()}", FPSText);
+        GUI.Label(new Rect(25, 70, 100, 100), $"± simulated entities: {gameManager.SimulatedCells.ToString()}", Shadow);
+        GUI.Label(new Rect(25, 97, 100, 100), $"Falling Sand Engine v1.04c @PiterGroot", FPSText);
+        GUI.Label(new Rect(25, 95, 100, 100), $"Falling Sand Engine v1.04c @PiterGroot", Shadow);
     }
     [ContextMenu("ResetDebugMenuSave")]
     private void ResetDebugMenuSave(){

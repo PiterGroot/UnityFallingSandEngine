@@ -92,6 +92,15 @@ public class WoodCell : MonoBehaviour
         if(smoke){
             Instantiate(smokeTile, transform.position, Quaternion.identity);
         }
+        gameManager.SimulatedCells--;
         Destroy(gameObject);
+    }
+    private void OnMouseOver() {
+        if(Input.GetKey(KeyCode.Mouse1)){
+             gameManager.SimulatedCells--;
+            Vector3Int cellPosition = Tilemap.LocalToCell(transform.position);
+            Tilemap.SetTile(cellPosition, null);
+            Destroy(gameObject);
+        }
     }
 }
