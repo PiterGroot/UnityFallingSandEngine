@@ -28,7 +28,7 @@ public class CellSwitcher : MonoBehaviour
             CurrentTile = Tiles[1];
             CurrentCellPrefab = CellPrefabs[1];
             gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
-            gameManager.brushSize = gameManager.startBrushSize;
+            gameManager.brushSize = gameManager.startBrushSize + 1;
         }
         if(Input.GetKeyDown(KeyCode.Alpha3)){
             CurrentTile = Tiles[2];
@@ -46,6 +46,7 @@ public class CellSwitcher : MonoBehaviour
             CurrentTile = Tiles[4];
             CurrentCellPrefab = CellPrefabs[4];
             gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+            gameManager.brushSize = gameManager.startBrushSize + 1;
         }
         if(Input.GetKeyDown(KeyCode.Alpha6)){
             CurrentTile = Tiles[5];
@@ -85,6 +86,7 @@ public class CellSwitcher : MonoBehaviour
                 CurrentTile = Tiles[4];
                 CurrentCellPrefab = CellPrefabs[4];
                 gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
+                gameManager.brushSize = gameManager.startBrushSize + 1;
             break;
             case 5:
                 CurrentTile = Tiles[5];
@@ -102,7 +104,7 @@ public class CellSwitcher : MonoBehaviour
                 CurrentTile = Tiles[2];
                 CurrentCellPrefab = CellPrefabs[2];
                 gameManager.UpdateCurrentSettings(CurrentTile, CurrentCellPrefab);
-                gameManager.brushSize = gameManager.startBrushSize;
+                gameManager.brushSize = gameManager.startBrushSize + 1;
             break;
         }
     }

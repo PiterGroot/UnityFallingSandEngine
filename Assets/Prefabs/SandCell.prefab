@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b874321cc0829544eb1d1dbcd84368ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
-  thisTile: {fileID: 11400000, guid: 345e3e2b99c5de949b455526655f6c4b, type: 2}
+  currentTile: {fileID: 11400000, guid: 345e3e2b99c5de949b455526655f6c4b, type: 2}
 --- !u!61 &8018603383106765456
 BoxCollider2D:
   m_ObjectHideFlags: 0

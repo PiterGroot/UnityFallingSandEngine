@@ -47,10 +47,9 @@ MonoBehaviour:
   isDead: 0
   isOnfire: 0
   DieTimer: {x: 0.2, y: 0.4}
-  thisTile: {fileID: 11400000, guid: efce7661356ffd647b533268d4610b84, type: 2}
+  currentTile: {fileID: 11400000, guid: efce7661356ffd647b533268d4610b84, type: 2}
   fireTile: {fileID: 11400000, guid: 04839ecc7440aeb4e89da5a94fd45263, type: 2}
   lavaTile: {fileID: 11400000, guid: 127b499ab6afe0c4ab275c48e5d5dd64, type: 2}
-  fireCell: {fileID: 4638507307231695380, guid: a30871e50124c12459355f7dc2265a12, type: 3}
   smokeTile: {fileID: 4638507307231695380, guid: 8f363397c24f790469c32e12c31e2f89, type: 3}
 --- !u!61 &-2547746220798727701
 BoxCollider2D:

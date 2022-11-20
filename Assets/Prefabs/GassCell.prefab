@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc84edc6fd47bc4186a30c2d08a54c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
-  thisTile: {fileID: 11400000, guid: 4fdeffcc2115f0040bb91bd1e9378c95, type: 2}
+  currentTile: {fileID: 11400000, guid: 4fdeffcc2115f0040bb91bd1e9378c95, type: 2}
   waterTile: {fileID: 11400000, guid: 5a07f58ff76b47e45bd207ed8f28d963, type: 2}
   lavaTile: {fileID: 11400000, guid: 127b499ab6afe0c4ab275c48e5d5dd64, type: 2}
 --- !u!61 &2985676043116367162

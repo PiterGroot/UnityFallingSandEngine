@@ -2595,18 +2595,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3de1decc5dcee84e9ed671a3e5d28f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usingFire: 0
   canClick: 0
-  UsingFire: 0
   startBrushSize: 0
-  inventoryCount: 0
-  moveSpeed: 5
   CellGrid: {fileID: 1950186227}
   inventoryAnim: {fileID: 631067633}
   brushSize: 1
-  SIMULATION_SPEED: 0.03
   killBorder: -50
   killBorderUp: 50
-  SimulatedCells: 0
+  simulatedCells: 0
 --- !u!4 &1925747543
 Transform:
   m_ObjectHideFlags: 0
@@ -2666,6 +2663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugFont: {fileID: 12800000, guid: 6cb0ebed2a5c606438126b7b2a8bf31c, type: 3}
+  gameVersion: v1.05a
 --- !u!4 &1950186224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4042723888431193156, guid: a2d0b787051b41746986a1e010b64552, type: 3}

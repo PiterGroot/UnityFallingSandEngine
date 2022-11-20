@@ -44,10 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ced98755554fb408c7db2a2941c404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
-  thisTile: {fileID: 11400000, guid: 127b499ab6afe0c4ab275c48e5d5dd64, type: 2}
-  waterTile: {fileID: 11400000, guid: 5a07f58ff76b47e45bd207ed8f28d963, type: 2}
-  smokeCell: {fileID: 4638507307231695380, guid: 8f363397c24f790469c32e12c31e2f89, type: 3}
+  currentTile: {fileID: 11400000, guid: 127b499ab6afe0c4ab275c48e5d5dd64, type: 2}
 --- !u!61 &-9029684625451471586
 BoxCollider2D:
   m_ObjectHideFlags: 0

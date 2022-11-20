@@ -45,12 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDead: 0
-  thisTile: {fileID: 11400000, guid: 5a07f58ff76b47e45bd207ed8f28d963, type: 2}
+  currentTile: {fileID: 11400000, guid: 5a07f58ff76b47e45bd207ed8f28d963, type: 2}
   fireTile: {fileID: 11400000, guid: 04839ecc7440aeb4e89da5a94fd45263, type: 2}
   lavaTile: {fileID: 11400000, guid: 127b499ab6afe0c4ab275c48e5d5dd64, type: 2}
-  obsidian: {fileID: 11400000, guid: 31581cfc8cdde4e478300ebf9b34ecc2, type: 2}
-  smokeCell: {fileID: 4638507307231695380, guid: 8f363397c24f790469c32e12c31e2f89, type: 3}
   cellSprite: {fileID: 7482667652216324306, guid: 3a7d6cc1479b5cf48b0a612e123f5095, type: 3}
+  smokeCell: {fileID: 4638507307231695380, guid: 8f363397c24f790469c32e12c31e2f89, type: 3}
 --- !u!61 &-2257494778161044113
 BoxCollider2D:
   m_ObjectHideFlags: 0
